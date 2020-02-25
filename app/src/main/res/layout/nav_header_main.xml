@@ -17,7 +17,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/ic_launcher_round"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+
+        app:srcCompat="@drawable/roomie_logo_white"
         android:contentDescription="@string/nav_header_desc"
         android:id="@+id/imageView" />
 
