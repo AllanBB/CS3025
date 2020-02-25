@@ -33,8 +33,9 @@ public class GalleryFragment extends Fragment {
         List list = new ArrayList();
         ArrayAdapter adapter;
         listView = root.findViewById(R.id.list_view);
-        list.add("Orange");
-        list.add("Orange");
+        list.add("Pay Rent");
+        list.add("Sweep Floors");
+        list.add("Water Plants");
         //adapter  = new ArrayAdapter(list);
         adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_checked, list );
         listView.setAdapter(adapter);
