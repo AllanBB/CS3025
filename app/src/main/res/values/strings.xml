@@ -1,11 +1,23 @@
 <resources>
-    <string name="app_name">CS3025</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+
+
+        <string name="app_name">CS3025</string>
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+        <string name="nav_header_task">Task: 3</string>
+        <string name="nav_header_users">User Account</string>
+        <string name="nav_header_desc">Navigation header</string>
+        <string name="action_settings">Settings</string>
+
+
+        <string name="menu_todo_list">To do List</string>
+        <string name="menu_create_task">Create Task</string>
+        <string name="menu_incoming">Incoming Tasks</string>
+        <string name="menu_pending">Pending Tasks</string>
+        <string name="menu_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">TodoList</string>
