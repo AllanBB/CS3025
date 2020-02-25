@@ -29,7 +29,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="i.e. 'Take out the trash'" />
+            android:hint="i.e. 'Take out the trash'"
+            android:inputType="text"
+            android:maxLength="30"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -57,7 +60,10 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Put any further details here" />
+            android:hint="Put any further details here "
+            android:maxLength="140"
+            android:maxLines="4"
+            android:scrollHorizontally="false"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
