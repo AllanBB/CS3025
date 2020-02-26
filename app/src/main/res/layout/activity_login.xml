@@ -12,38 +12,36 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".ui.login.LoginActivity">
 
+
     <ImageView
         android:id="@+id/logo"
         android:layout_width="366dp"
         android:layout_height="178dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/logo_white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <EditText
         android:id="@+id/username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="176dp"
         android:layout_marginEnd="24dp"
 
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.843"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/logo"
         android:textColor="#ffff"
         android:textColorHighlight="#ffff"
         android:textColorHint="#ffff"
-        app:backgroundTint="@color/cardview_light_background"/>
+        app:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
 
     <EditText
         android:id="@+id/password"
@@ -78,14 +76,15 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
         android:background="@drawable/button_round"
-        android:textColor="#003366"
         android:enabled="false"
         android:text="@string/action_sign_in"
+        android:textColor="#003366"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.083" />
 
     <ProgressBar
         android:id="@+id/loading"
