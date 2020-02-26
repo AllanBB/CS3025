@@ -23,7 +23,7 @@ public class ExistHouse extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(keyInput.getText().length() != 8){
-                    Toast.makeText(getApplicationContext(), "Invalid Room Key", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Invalid Room Key. Must be 8 characters.", Toast.LENGTH_LONG).show();
                 }
                 else{
                     Intent intent = new Intent(ExistHouse.this, MainActivity.class);
