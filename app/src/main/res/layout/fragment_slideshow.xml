@@ -84,91 +84,62 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="320dp">
+        android:layout_marginTop="320dp"
+        android:showDividers="middle"
+        >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:showDividers="middle"
+            >
             <TextView
                 android:id="@+id/user"
-                android:layout_width="@dimen/user_image_width"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_height="wrap_content"
                 android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
+                android:text="John" />
             <TextView
                 android:id="@+id/user2"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_height="wrap_content"
                 android:drawableBottom="@drawable/ic_person_black_24dp"
                 android:text="@string/user_name" />
+            <TextView
+                android:id="@+id/user1"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/ic_person_black_24dp"
+                android:text="Sue" />
             <TextView
                 android:id="@+id/user3"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
                 android:layout_height="wrap_content"
                 android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
-            <TextView
-                android:id="@+id/user13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableBottom="@drawable/ic_person_black_24dp"
-                android:text="@string/user_name" />
+                android:text="Jim" />
+
+
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/create_task_button"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="165dp"
+        android:background="@drawable/red_button"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/menu_create_task" />
 
 </RelativeLayout>

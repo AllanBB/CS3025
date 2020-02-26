@@ -25,7 +25,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <EditText
         android:id="@+id/username"
         android:layout_width="0dp"
@@ -45,7 +44,6 @@
         android:textColorHighlight="#ffff"
         android:textColorHint="#ffff"
         app:backgroundTint="@color/cardview_light_background"/>
-
 
     <EditText
         android:id="@+id/password"
