@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -16,10 +18,8 @@ public class SlideshowFragment extends Fragment {
 
     private SlideshowViewModel slideshowViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                ViewModelProviders.of(this).get(SlideshowViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        slideshowViewModel = ViewModelProviders.of(this).get(SlideshowViewModel.class);
         View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
         //final TextView textView = root.findViewById(R.id.text_slideshow);
         slideshowViewModel.getText().observe(this, new Observer<String>() {
@@ -28,6 +28,18 @@ public class SlideshowFragment extends Fragment {
                 //textView.setText(s);
             }
         });
+        //LinearLayout userPicList = root.findViewById(R.id.user_list);
+        //LayoutInflater inflater = LayoutInflater.from(getContext());
+
+        for (int i=0;i<6;i++) {
+            //View view = inflater.inflate(R.layout.user_picture, userPicList, false);
+            //TextView textView = view.findViewById(R.id.user_list_text);
+            //textView.setText("User: "+ i);
+            //ImageView imageView = view.findViewById(R.id.user_image_view);
+            //imageView.setImageResource(R.mipmap.ic_launcher);
+            //userPicList.addView(view);
+        }
+
         return root;
     }
 }
