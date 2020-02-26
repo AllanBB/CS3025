@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3997e5"
+    tools:context=".ExistHouse">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="366dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="366dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/white_line"
+        android:tint="#ffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="302dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="256dp"
+        android:gravity="center"
+        android:text="Thanks for planning with us!"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line"
+        app:layout_constraintVertical_bias="0.345"
+        app:layout_constraintVertical_chainStyle="@id/line" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="363dp"
+        android:layout_height="133dp"
+        android:gravity="center"
+        android:text="Please enter the 8 digit key given to you by your home owner."
+        android:textColor="#ffff"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.135" />
+
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="367dp"
+        android:layout_height="59dp"
+
+        android:hint="Room Key"
+        android:selectAllOnFocus="true"
+
+        android:textColor="#ffff"
+        android:textColorHighlight="#ffff"
+        android:textColorHint="#ffff"
+        app:backgroundTint="@color/cardview_light_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_gravity="start"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/button_round_blue"
+
+        android:enabled="false"
+        android:text="next"
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
