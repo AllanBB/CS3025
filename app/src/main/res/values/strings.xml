@@ -35,5 +35,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="user_name">"Braden"</string>
+    <string name="settings_reminders">"Reminders:"</string>
+    <string name="leave_house">"Leave House"</string>
+    <string name="signout">"Sign Out"</string>
+
 
 </resources>
