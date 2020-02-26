@@ -130,4 +130,15 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <Button
+        android:id="@+id/create_task_button"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/red_button"
+        android:text="@string/menu_create_task" />
+
 </RelativeLayout>
