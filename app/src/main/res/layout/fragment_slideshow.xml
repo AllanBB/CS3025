@@ -132,13 +132,14 @@
 
     <Button
         android:id="@+id/create_task_button"
-        android:layout_width="160dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="165dp"
-        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginTop="473dp"
+        android:layout_marginEnd="165dp"
         android:background="@drawable/red_button"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/menu_create_task" />
 
 </RelativeLayout>
