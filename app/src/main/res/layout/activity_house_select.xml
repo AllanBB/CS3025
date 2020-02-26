@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseSelect">
+
+    <ImageView
+        android:id="@+id/roof"
+        android:layout_width="366dp"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/roof_white"
+        android:tint="#3997e5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="281dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="144dp"
+        android:gravity="center"
+        android:text="Welcome to Roomii! Here you have the option of creating a new House for you and your roomates, or joining an existing one."
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/roof"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="@id/roof" />
+
+    <Button
+        android:id="@+id/new_house"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_round_blue"
+        android:enabled="false"
+        android:text="Create New House"
+
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/exist_house"
+        android:layout_width="282dp"
+        android:layout_height="53dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_round_blue"
+        android:enabled="false"
+        android:text="Join Existing House"
+
+        android:textColor="#ffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_house"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
