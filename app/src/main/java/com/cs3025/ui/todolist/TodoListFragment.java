@@ -20,13 +20,13 @@ import java.util.ArrayList;
 
 public class TodoListFragment extends Fragment {
 
-    private TodoListViewModel galleryViewModel;
+    private TodoListViewModel todoListViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        galleryViewModel = ViewModelProviders.of(this).get(TodoListViewModel.class);
+        todoListViewModel = ViewModelProviders.of(this).get(TodoListViewModel.class);
 
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.fragment_todolist, container, false);
         ListView listView;
         List list = new ArrayList();
         ArrayAdapter adapter;

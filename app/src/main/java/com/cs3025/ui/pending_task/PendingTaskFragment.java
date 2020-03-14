@@ -1,31 +1,28 @@
-package com.cs3025.ui.share;
+package com.cs3025.ui.pending_task;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
-import androidx.annotation.Nullable;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.cs3025.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShareFragment extends Fragment {
+public class PendingTaskFragment extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private PendingTaskModel pendingTaskModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel = ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_share, container, false);
+        pendingTaskModel = ViewModelProviders.of(this).get(PendingTaskModel.class);
+        View root = inflater.inflate(R.layout.fragment_pending_task, container, false);
         ListView listView;
         List list = new ArrayList();
         ArrayAdapter adapter;

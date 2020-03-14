@@ -22,7 +22,7 @@ public class ToolsFragment extends Fragment {
 
         toolsViewModel = ViewModelProviders.of(this).get(ToolsViewModel.class);
 
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.fragment_todolist, container, false);
         ListView listView;
         List titles = new ArrayList();
         List descs = new ArrayList();
