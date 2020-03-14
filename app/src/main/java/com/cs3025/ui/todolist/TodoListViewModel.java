@@ -1,14 +1,14 @@
-package com.cs3025.ui.gallery;
+package com.cs3025.ui.todolist;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class TodoListViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public TodoListViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This will be a list");
     }

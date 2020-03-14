@@ -1,4 +1,4 @@
-package com.cs3025.ui.gallery;
+package com.cs3025.ui.todolist;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,27 +8,23 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.ListView;
-import android.widget.TextView;
-import androidx.annotation.Nullable;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.cs3025.MainActivity;
 import com.cs3025.R;
 import java.util.List;
-import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class GalleryFragment extends Fragment {
+public class TodoListFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private TodoListViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        galleryViewModel = ViewModelProviders.of(this).get(GalleryViewModel.class);
+        galleryViewModel = ViewModelProviders.of(this).get(TodoListViewModel.class);
 
         View root = inflater.inflate(R.layout.fragment_gallery, container, false);
         ListView listView;

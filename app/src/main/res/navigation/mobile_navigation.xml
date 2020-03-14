@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.cs3025.ui.gallery.GalleryFragment"
+        android:name="com.cs3025.ui.todolist.TodoListFragment"
         android:label="@string/menu_todo_list"
         tools:layout="@layout/fragment_gallery" />
 
